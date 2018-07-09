@@ -1,0 +1,74 @@
+@import url(base.css);
+* { box-sizing: border-box; font-size: 16px; font-family: "Raleway", sans-serif; }
+
+#home { position: absolute; top: 0; }
+
+header { width: 100%; height: 70px; padding: 0 25px 25px; }
+header .top { width: 100%; height: 70px; display: flex; align-items: center; justify-content: space-between; }
+header .top .logo { height: 60px; }
+header .top .logo img { height: 100%; }
+header .menu { width: 55%; height: 100%; }
+header .menu ul { width: 100%; height: 100%; display: flex; align-items: flex-end; justify-content: space-between; }
+header .menu ul a { font-size: 15px; color: #777; text-transform: uppercase; padding-bottom: 15px; display: block; }
+header .menu ul .active { border-bottom: 4px solid #00b095; }
+header .menu .social { margin: 0 0 15px 0; }
+header .menu .social a { margin-left: 5px; font-size: 15px; color: #00b095; display: inline; }
+
+#banner { width: 100%; padding: 0 25px 25px 25px; }
+#banner .container { width: 100%; height: 100%; padding-left: 2%; background: url(../imagens/header-gradient.jpg) center no-repeat; background-size: cover; display: flex; align-items: center; box-shadow: inset 0 0 2px #d9d9d9; }
+#banner .container h2 { font-size: 30px; color: #fff; }
+#banner .caption { width: 400px; display: none; flex-flow: column; justify-content: center; align-items: center; }
+#banner .caption img { width: 50%; margin-bottom: 15px; }
+#banner .caption p { color: #00b095; margin-bottom: 15px; text-align: center; color: #777; line-height: 20px; }
+#banner .caption nav { display: flex; }
+#banner .caption nav a { width: 200px; height: 40px; line-height: 40px; display: block; margin-right: 15px; text-align: center; text-transform: uppercase; background: #00b095; color: #fff; font-size: 14px !important; font-weight: bold; }
+#banner .caption nav a:last-child { margin: 0; }
+
+#about { width: 100%; padding: 0 25px 25px 25px; }
+#about .container { width: 100%; height: 100%; background: url(../imagens/about.jpg) center no-repeat; background-size: cover; padding: 2%; }
+#about .container h2 { font-size: 30px; color: #fff; }
+#about .container p { width: 55%; margin-top: 20px; color: #fff; line-height: 20px; }
+
+#services { width: 100%; padding: 0 25px 25px 25px; }
+#services .container { width: 100%; height: 100%; background: url(../imagens/services.jpg) center no-repeat; background-size: cover; }
+#services .container h2 { font-size: 30px; color: #fff; }
+#services .opacity { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); padding: 25px; }
+#services .menu { width: 40%; height: 70vh; margin-top: 20px; border-right: 2px dotted #fff; padding: 20px; float: left; }
+#services .menu ul { width: 100%; height: 100%; display: flex; flex-flow: column; justify-content: center; align-items: flex-end; }
+#services .menu ul li { margin-bottom: 10px; }
+#services .menu ul li a { font-size: 20px; color: #fff; }
+#services .content-service { width: 50%; height: 70vh; padding: 20px; float: left; margin-top: 20px; }
+#services .content-service .image { width: 100%; height: 40%; background: url(../imagens/dentistica.jpg) center no-repeat; background-size: cover; position: relative; border: 10px solid #fff; position: relative; }
+#services .content-service .image .title { width: 70%; height: 45px; background: url(../imagens/title-services.png) bottom right no-repeat; background-size: 100% 100%; position: absolute; bottom: 0; right: 0; padding: 0 10px; }
+#services .content-service .image .title h3 { font-size: 25px; color: #fff; text-align: right; line-height: 45px; }
+#services .content-service .text { width: 100%; padding: 20px 0; }
+#services .content-service .text p { color: #fff; line-height: 20px; margin-bottom: 10px; }
+
+#team { width: 100%; padding: 0 25px 25px 25px; }
+#team .container { width: 100%; height: 100%; padding: 25px; background: url(../imagens/services.jpg) center no-repeat; background-size: cover; }
+#team .container h2 { font-size: 30px; color: #fff; }
+#team .container .menu { width: 30%; padding-bottom: 10px; margin: 40px auto 25px; }
+#team .container .menu ul { width: 100%; display: flex; justify-content: space-between; }
+#team .container .menu ul a { width: 50px; height: 50px; border-radius: 50px; border: 3px solid #fff; display: block; }
+#team .container .menu ul a img { width: 100%; }
+#team .container .left { width: 50%; padding: 25px 40px 25px 25px; float: left; display: flex; flex-flow: column; align-items: flex-end; border-right: 2px dotted #fff; }
+#team .container .left figure { margin: 0; width: 220px; height: 220px; border-radius: 220px; border: 5px solid #fff; }
+#team .container .left figure img { width: 100%; }
+#team .container .left h3 { font-size: 30px; color: #fff; padding: 15px 0; }
+#team .container .right { width: 50%; padding: 25px 25px 25px 40px; float: right; }
+#team .container .right p { color: #fff; line-height: 20px; margin-bottom: 10px; font-weight: bold; }
+
+#contact { width: 100%; padding: 0 25px 25px 25px; position: relative; }
+#contact .container { width: 100%; height: 100%; }
+#contact .container iframe { width: 100% !important; height: 100% !important; z-index: 0; }
+#contact .container .form { width: 30%; background: rgba(0, 176, 149, 0.85); z-index: 1; position: absolute; top: 0; right: 5%; padding: 0 25px; }
+#contact .container .form h1 { font-size: 30px; color: #fff; margin: 25px 0 10px; }
+#contact .container .form p { font-size: 16px; color: #fff; margin-bottom: 20px; line-height: 23px; }
+#contact .container .form form { width: 100%; display: flex; flex-flow: column; }
+#contact .container .form form label { color: #fff; margin-bottom: 5px; font-style: italic; }
+#contact .container .form form input[type=text], #contact .container .form form input[type=email] { width: 100%; height: 40px; background: transparent; border: 1px solid #fff; margin-bottom: 10px; padding: 0 10px; color: #fff; }
+#contact .container .form form textarea { width: 100%; height: 100px; background: transparent; border: 1px solid #fff; padding: 10px; margin-bottom: 10px; color: #fff; }
+#contact .container .form form input[type=submit] { width: 40%; height: 40px; margin-left: auto; border: none; background: rgba(255, 255, 255, 0.85); text-transform: uppercase; color: #00b095; cursor: pointer; transition: 0.3s; }
+#contact .container .form form input[type=submit]:hover { background: #fff; }
+
+/*# sourceMappingURL=style.css.map */
